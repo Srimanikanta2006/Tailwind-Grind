@@ -1,7 +1,14 @@
-# Node modules
+# ignore node modules and build output
 node_modules/
 src/output.css
-*.json
- 
 
- 
+# ignore package files (you requested only index/input in repo)
+package.json
+package-lock.json
+
+# ignore leftover folder if present
+.gitignore/
+
+# common extras
+npm-debug.log
+.DS_Store
