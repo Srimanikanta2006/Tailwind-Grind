@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Grind</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <link href="../src/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="">
+    <!-- CSS gets implemented Only when, "npm run dev" is runned on terminal! -->
+    <h1 class="text-3xl font-bold underline text-blue-500">Hello world!</h1>
+    <button
+      class="bg-blue-400 rounded text-red-400 text-xl p-1.5 m-1.5 hover:bg-blue-600"
+    >
+      Button
+    </button>
   </body>
 </html>
+<!-- In the case of Bootstrap, if button class is attached, then the whole stylings property set gets implemented with just by creating Button, 
+     But not in Tailwind..  
+     
+     Each property, has its own Class..... separately! -->
+<!-- Output.css : a file which is created, consisting of only properties which are used by us, this is required and generated auto. by tailwind! -->
